@@ -20,21 +20,35 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-header, footer {
+header{
     background-color: var(--secondary-color);
     padding: 1rem 0;
     text-align: center;
+    width: 100%;
+}
+footer {
+    background-color: var(--background-color); /* Match body background */
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid var(--border-color); /* Optional: subtle separation */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1rem;
 }
 
@@ -45,6 +59,8 @@ nav a {
 
 main {
     padding: 2rem;
+    max-width: 1200px;
+    width: 100%;
 }
 
 h1, h2, h3 {
@@ -63,11 +79,11 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-
+    
     .project-grid {
         grid-template-columns: 1fr;
     }
@@ -76,7 +92,7 @@ a:hover {
 /* Layout with Flexbox/Grid */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 
@@ -119,6 +135,7 @@ a:hover {
     margin-top: 0.5rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
+    width: 100%;
 }
 
 .contact button {
@@ -148,7 +165,7 @@ p {
     font-size: 1rem;
 }
 
-/* Color Palette */
+/* Call to Action */
 .cta button {
     background-color: var(--primary-color);
     color: white;
@@ -158,10 +175,11 @@ p {
     cursor: pointer;
 }
 
-/* Visual Appeal */
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 5rem 0;
+    width: 100%;
 }
 
 .hero h1 {
