@@ -1,13 +1,3 @@
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #f4f4f4;
-    --text-color: #333;
-    --heading-color: #2c3e50;
-    --background-color: #fff;
-    --border-color: #ddd;
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /* Reset and Global Styles */
 * {
     margin: 0;
@@ -16,28 +6,27 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: #333;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
 
-header{
-    background-color: var(--secondary-color);
-    padding: 1rem 0;
-    text-align: center;
-    width: 100%;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-footer {
-    background-color: var(--background-color); /* Match body background */
-    width: 100%;
+
+header, footer {
+    background-color: #f4f4f4;
     padding: 1rem 0;
     text-align: center;
-    border-top: 1px solid var(--border-color); /* Optional: subtle separation */
+    width: 100%;
 }
 
 nav ul {
@@ -54,7 +43,12 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: var(--heading-color);
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
 }
 
 main {
@@ -64,13 +58,14 @@ main {
 }
 
 h1, h2, h3 {
-    color: var(--heading-color);
+    color: #2c3e50;
     margin-bottom: 1rem;
 }
 
 a {
-    color: var(--primary-color);
+    color: #3498db;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
@@ -97,11 +92,12 @@ a:hover {
 }
 
 .project-item {
-    border: 1px solid var(--border-color);
+    border: 1px solid #ddd;
     padding: 1.5rem;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:#f4f4f4;
 }
 
 .project-item img {
@@ -111,7 +107,8 @@ a:hover {
 }
 
 .project-tags span {
-    background-color: var(--secondary-color);
+    background-color: #3498db;
+    color: white;
     padding: 0.3rem 0.6rem;
     margin: 0.2rem;
     border-radius: 5px;
@@ -123,17 +120,22 @@ a:hover {
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact label {
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 .contact input,
 .contact textarea {
     padding: 0.7rem;
     margin-top: 0.5rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid #ddd;
     border-radius: 4px;
     width: 100%;
 }
@@ -141,11 +143,17 @@ a:hover {
 .contact button {
     margin-top: 1.5rem;
     padding: 0.8rem 1.2rem;
-    background-color: var(--primary-color);
+    background-color: #3498db;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background-color: #217dbb;
 }
 
 /* Typography */
@@ -163,16 +171,24 @@ h3 {
 
 p {
     font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
 }
 
 /* Call to Action */
 .cta button {
-    background-color: var(--primary-color);
+    background-color: #3498db;
     color: white;
     border: none;
     padding: 0.7rem 1.2rem;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cta button:hover {
+    background-color: #217dbb;
 }
 
 /* Hero Section */
@@ -180,6 +196,7 @@ p {
     text-align: center;
     padding: 5rem 0;
     width: 100%;
+    background-color: #f4f4f4;
 }
 
 .hero h1 {
@@ -197,5 +214,5 @@ p {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
