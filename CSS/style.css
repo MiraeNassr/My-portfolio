@@ -9,7 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fff;
+    background-color: #978181;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,8 @@ body {
     margin: 0 auto;
 }
 
-header, footer {
+header,
+footer {
     background-color: #f4f4f4;
     padding: 1rem 0;
     text-align: center;
@@ -57,7 +58,9 @@ main {
     width: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #2c3e50;
     margin-bottom: 1rem;
 }
@@ -78,7 +81,7 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .project-grid {
         grid-template-columns: 1fr;
     }
@@ -97,7 +100,7 @@ a:hover {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color:#f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .project-item img {
@@ -214,5 +217,22 @@ p {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#scroll {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#scroll:hover {
+    background-color: #0056b3;
 }
