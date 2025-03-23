@@ -1,9 +1,72 @@
 let scrollButton = document.getElementById("scroll");
-
-window.onscroll = function () {
-    scrollButton.style.display = window.scrollY > 100 ? "block" : "none";
-};
-
+scrollButton.innerHTML = '↑';
 scrollButton.onclick = function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("nav-list").classList.toggle("show");
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contact-form");
+
+    contactForm.addEventListener("submit", function(event) {
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+       
+        if (!name) {
+            alert("Please fill in your name.");
+            event.preventDefault(); 
+            return;
+        }
+
+        if (!email) {
+            alert("Please fill in your email.");
+            event.preventDefault();
+            return;
+        }
+
+        
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            event.preventDefault();
+            return;
+        }
+
+        if (!message) {
+            alert("Please fill in your message.");
+            event.preventDefault();
+            return;
+        }
+
+        alert("Form submitted successfully!");
+    });
+});
+
+
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+    link.addEventListener('mouseover', function() {
+        this.style.textDecoration = 'underline';
+    });
+    link.addEventListener('mouseout', function() {
+        this.style.textDecoration = 'none';
+    });
+});
+
+
+const projectItems = document.querySelectorAll('.project-item');
+
+projectItems.forEach(item => {
+    item.addEventListener('mouseover', function(){
+        this.style.transform = 'scale(1.05)';
+        this.style.transition = 'transform 0.3s ease';
+    });
+    item.addEventListener('mouseout', function(){
+        this.style.transform = 'scale(1)';
+    });
+});

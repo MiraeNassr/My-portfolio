@@ -9,62 +9,153 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="logo">
+                <img src="imags/logo.png" alt="logo-img">
+                <h4>Mirae Nassr</h4>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="navli">
+                <ul id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <a href="pdf/Mirae (2).pdf" class="CV"><button>Hire Me</button></a>
+                </ul>
+
+            </div>
+    
+        
         </nav>
     </header>
 
     <main>
-        <img src="" alt="Profile Picture">
-        <section class="hero">
-            <h1>Mirae Nassr</h1>
-            <p>Aspiring Front-End Developer</p>
-            <p>I am a aspiring software developer with a passion for creating innobative and
-                user-friendly web applications. <br> I started my journey in software development
-                a short time ago, but i have already learned a lot from HTML, CSS and JavaScript. <br>
-                I am ecited to countinue learning and expand my skills in this fild. 
-            </p>
-            <div class="cta">
-                <a href="MiraeCV (1).pdf"><button>Hire Me</button></a>
-                <a href="contact.html"><button>Let's Talk</button></a>
+        <section class="hero" id="home">
+            <div class="info">
+                <h1>Mirae Nassr</h1><br>
+                <p>Aspiring Front-End Developer</p><br>
+                <p>I am an aspiring software developer with a passion for creating innovative and user-friendly web applications. <br> I started my journey in software development a short time ago, and I have already learned a lot from HTML, CSS, and JavaScript. I am excited to continue learning and expand my skills in this field.</p>
             </div>
-            
+            <div class="imag">
+                <img src="imags/20240430_153707.jpg" alt="Profile Picture">
+            </div>
         </section>
+    
+    
+
+        <section class="about-me" id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my page! I'm Mirae Nassr, an aspiring software developer with a passion for development and problem-solving. I'm driven by the constant challenges this field offers and the opportunity for continuous learning and growth.</p>
+          
+            <h3>Education</h3>
+            <ul>
+                <li>MBOrijnland: Software Developer (Niveau 4)</li>
+                <li>Damascus University: Archaeology</li>
+            </ul>
+
+            <h3>Fun Facts</h3>
+            <ul>
+                <li>One of the reasons I love software development is its constant evolution and innovation.</li>
+                <li>I see coding as the language of the future.</li>
+                <li>I thrive in team environments and find satisfaction in tackling complex problems.</li>
+            </ul>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="technical-skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h2>Future Learning Goals</h2>
+            <ul class="learning-goals">
+                <li>PHP</li>
+                <li>Databases</li>
+            </ul>
+            <h2>Soft Skills</h2>
+            <ul class="soft-skills">
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem-solving</li>
+            </ul>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="imags/Bookshop.PNG" alt="Project 1 Bookshop">
+                    <h3>Project 1 Bookshop</h3>
+                    <p>Book shop project description.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/MiraeNassr/Yendor.les3" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <img src="imags/chessboard.PNG" alt="Project 2 Chessboard">
+                    <h3>Project 2 Chessboard</h3>
+                    <p>A simple web-based chessboard.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/MiraeNassr/Chessboard" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Write your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Sit your E-mail" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type y" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="contact-info">
+                <p>Email: <a href="mailto:6052114@mborijnland.nl">6052114@mborijnland.nl</a></p>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <div class="social">
             <a href="mailto:https://outlook.com/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="20" alt="Email">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="25" alt="Email">
             </a>
-            
+
             <a href="https://wa.me/qr/BMS2RI6XR4IYB1" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="20" alt="WhatsApp">
-            </a>
-
-            <a href="https://www.facebook.com/MiraeNassr" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" width="20" alt="Facebook">
-            </a>
-
-
-            <a href="https://www.instagram.com/miraenassr/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="20" alt="Instagram">
-            </a>
-
-
-            <a href="https://t.me/Mirae2" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="20" alt="Telegram">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="25" alt="WhatsApp">
             </a>
             
-            </div>
+            <a href="https://t.me/Mirae2" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="25" alt="Telegram">
+            </a>
+        </div>
 
-            <button id="scroll">up</button>
-        </footer>
+        <div>
+        <button id="scroll"></button>
+         </dive>
+
+    </footer>
 
     <script src="JS/script.js"></script>
 </body>
