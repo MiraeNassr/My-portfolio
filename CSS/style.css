@@ -35,9 +35,8 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 9px;
     transition: all 0.3s ease-in-out;
-            z-index: 1000;
+    z-index: 1000;
     display: flex;
     background-color: #283d3b; /* Dark Greenish-Teal for Nav */
     padding: 9px; 
@@ -100,7 +99,7 @@ li a.active {
 }
 
 .CV button {
-    background-color: #c44536; 
+    background-color: #ee7567; 
     position: absolute;
     right: 5px;
     align-self: center;
@@ -115,7 +114,7 @@ li a.active {
 
 .CV button:hover {
     background-color: #772e25;
-    width: 100%; /* Dark Brownish-Red for hover */
+    width: 10%; 
 }
 
 
@@ -132,7 +131,7 @@ main{
     align-items: center;    
 
 }
- section {
+section {
         width: 90%;
         max-width: 1200px;
         margin: 50px auto;
@@ -147,23 +146,22 @@ main{
     }
     
     /* Hover Effect */
-    section:hover {
-        transform: scale(1.03);
-        box-shadow: 0 15px 40px rgb(0, 0, 0);
+section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgb(0, 0, 0);
     }
-    .hero img {
-        width: 60%;
-        height: auto;
-        
-        transition: transform 0.3s ease-in-out;
-        border-radius: 15px;
+.hero img {
+    width: 60%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
     }
     
     /* Hover Effect */
-    .hero:hover img {
-        transform: scale(1.1);
-        filter: brightness(80%);
-    }
+.hero:hover img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
     
 
 
@@ -204,7 +202,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
    
     
-    gap: 1.5rem; /* Space between items */
+    gap: 1.5rem; 
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
@@ -230,6 +228,8 @@ p {
     gap: 1.5rem; /* Space between items */
 }
 
+
+
 /* Project Items */
 .project-item {
     border: 3px solid #2f37c0; 
@@ -246,6 +246,18 @@ p {
 }
 .project-tags {
     color: #f7fbfa;
+    margin-top: 10px;
+}
+
+.project-tags span {
+    
+    display: inline-block;
+    background-color: #007D94; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
 }
 
 .project-item h3 {
@@ -256,6 +268,7 @@ p {
 .contact form {
     display: flex;
     flex-direction: column;
+    width: 350px;
     max-width: 500px;
     margin: 0 auto; /* Center form */
     background-color: #838383; 
@@ -295,6 +308,10 @@ p {
     background-color: #772e25; /* Dark Brownish-Red on hover */
 }
 
+.contact-info {
+    margin-top: 30px;
+}
+
 .social {
     align-items: center;
    margin-top: 12px;
@@ -311,7 +328,7 @@ p {
     background-color: #007BFF; /* Default Blue */
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 71px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -358,33 +375,42 @@ p {
      
     
     .navli ul {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 50%;
-        width: 50%;
-        
-        background-color: #283d3b;
-        text-align: center;
-        gap: 23px;
-       
-        padding-bottom: 70px;
+        display: none;
     }
     
     .CV button {
         display: flex;
         position: absolute;
         flex-direction: column;
-        top: 252px;
+        top: 256px;
         align-items: center;
-        left: 0;  
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        justify-content: center;
+    }
+    .CV button:hover {
+        padding: 0;
+        width: 100%;
     }
 
     .navli ul.show {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        width: 50%;
+        background-color: #283d3b;
+        text-align: center;
+        gap: 23px;
+        padding-bottom: 70px;
+    }
+    
+    .navli ul.show :hover {
+        background-color: #772e25;
+        padding: 0;
         width: 100%;
     }
 
