@@ -1,5 +1,5 @@
 // Script the menu to click it
-document.getElementById("menu-toggle").addEventListener("click", function() {
+document.getElementById("menu-icon").addEventListener("click", function() {
     document.getElementById("nav-list").classList.toggle("show");
 });
 
@@ -16,6 +16,7 @@ projectItems.forEach(item => {
         this.style.transform = 'scale(1)';
     });
 });
+
 
 //Script the Contact form, sabmit button and add alert if there is a mistake .
 document.addEventListener("DOMContentLoaded", function() {
@@ -64,3 +65,35 @@ scrollButton.innerHTML = '↑';
 scrollButton.onclick = function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+
+//nav click
+document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('.navli ul li a');
+    links.forEach(function(element) {
+        element.addEventListener('click', function(e) {
+            // Check if the clicked link is for the C.V or if it's a regular link
+            if (this.classList.contains('CV')) {
+                // Allow default behavior for the C.V link (opening a PDF)
+                return; 
+            } else {
+                // Prevent default behavior for other links
+                e.preventDefault();
+    
+                // Remove 'active' class from all links
+                links.forEach(function(el) {
+                    el.classList.remove('active');
+                });
+    
+                // Add 'active' class to the clicked link
+                this.classList.add('active');
+    
+                
+                // You can remove this if you want immediate navigation
+                setTimeout(() => {
+                    window.location.href = this.href; 
+                }, 100); 
+            }
+        });
+    });
+});
