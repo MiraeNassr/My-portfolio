@@ -17,18 +17,18 @@ body {
 
 /*Header styling*/
 header {
-    background-color: #197278;
+    background-color: #003366;
     padding: 2rem;
     text-align: center;
     width: 100%;
-    color: #edddd4;
+    color: #D9D9D9;
 }
 
 /* Footer styling*/
 footer {
     display: flow-root;
     padding: 2rem;
-    background-color: #197278;
+    background-color: #003366;
     text-align: center;
 }
 
@@ -43,7 +43,7 @@ nav {
     bottom: 0;
     transition: all 0.3s ease-in-out;
     z-index: 1000;
-    background-color: #283d3b;
+    background-color: #003366;
     padding: 9px;
     height: 60px;
 }
@@ -61,7 +61,7 @@ nav {
 
 .logo h4 {
     margin-left: 10px;
-    color: #edddd4;
+    color: #D9D9D9;
 }
 
 .navli {
@@ -89,7 +89,7 @@ nav ul {
     padding: 0.2em 2em;
     font-family: sans-serif;
     text-decoration: none;
-    color: #ccc;
+    color: #D9D9D9;
 
 
 }
@@ -97,11 +97,11 @@ nav ul {
 
 .navli ul li a.active {
     background-color: #afb8cf;
-    color: #3646b0
+    color: #003366
 }
 
 .navli ul li a:hover {
-    color: #fff;
+    color: #D9D9D9;
     background-color: #72784a;
 }
 
@@ -110,12 +110,12 @@ nav ul {
 
 /*C.V button in nav ul style */
 .CV button {
-    background-color: #007BFF;
+    background-color: #878080;
     position: absolute;
     right: 5px;
     align-self: center;
     top: 10px;
-    color: #edddd4;
+    color: #D9D9D9;
     border: none;
     padding: 10px 20px;
     height: 40px;
@@ -124,7 +124,7 @@ nav ul {
 }
 
 .CV button:hover {
-    background-color: #0056b3;
+    background-color: #003366;
     width: 10%;
 }
 
@@ -161,11 +161,11 @@ section {
     max-width: 1200px;
     margin: 50px auto;
     padding: 50px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    background: linear-gradient(#003366, #003366),
         url('https://source.unsplash.com/random/1600x900') center/cover no-repeat;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgb(0, 0, 0);
-    color: #d3d3d3;
+
+    color: #D9D9D9;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -173,7 +173,7 @@ section {
 /* Hover effect */
 section:hover {
     transform: scale(1.03);
-    box-shadow: 0 15px 40px rgb(0, 0, 0);
+
 }
 
 
@@ -193,7 +193,7 @@ section:hover {
 h1,
 h2,
 h3 {
-    color: #b1a7a6;
+    color: #D9D9D9;
 }
 
 h1 {
@@ -212,7 +212,7 @@ h3 {
 
 p {
     font-size: 1rem;
-    color: #ffffff;
+    color: #D9D9D9;
 }
 
 /*About me styling*/
@@ -278,7 +278,7 @@ p {
     padding: 1.5rem;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     background-color: #838383;
 }
 
@@ -290,7 +290,7 @@ p {
 
 /*Project tags*/
 .project-tags {
-    color: #f7fbfa;
+    color: #D9D9D9;
     margin-top: 10px;
 }
 
@@ -298,7 +298,7 @@ p {
 .project-tags span {
     display: inline-block;
     background-color: #007D94;
-    color: white;
+    color: #D9D9D9;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
@@ -306,7 +306,7 @@ p {
 }
 
 .project-item h3 {
-    color: #283d3b;
+    color: #D9D9D9;
 }
 
 /* Contact Section */
@@ -319,13 +319,13 @@ p {
     background-color: #838383;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .contact label {
     margin-top: 1rem;
     font-weight: bold;
-    color: #283d3b;
+    color: #D9D9D9;
 }
 
 .contact input,
@@ -340,9 +340,9 @@ p {
 .contact button {
     margin-top: 1.5rem;
     padding: 0.8rem 1.2rem;
-    background-color: #007BFF;
+    background-color: #878080;
     /* Coral Red */
-    color: #edddd4;
+    color: #D9D9D9;
     /* Light Beige text */
     border: none;
     border-radius: 4px;
@@ -374,8 +374,8 @@ p {
     align-items: center;
     bottom: 100px;
     right: 0;
-    background-color: #007BFF;
-    color: white;
+    background-color: #878080;
+    color: #D9D9D9;
     border: none;
     padding: 12px 40px;
     border-radius: 5px;
@@ -472,7 +472,7 @@ p {
         right: 0%;
         background-color: #007BFF;
         /* Default Blue */
-        color: white;
+        color: #D9D9D9;
         border: none;
         padding: 16px 16px;
         border-radius: 5px;
