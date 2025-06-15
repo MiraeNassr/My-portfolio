@@ -4,32 +4,31 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #283d3b;
-    background-color: #edddd4;
+    color: #283845;
+    background-color: #f6f5f5;
     line-height: 1.6;
     align-items: center;
     margin: 0;
-
 }
 
 /*Header styling*/
 header {
-    background-color: #003366;
+    background-color: #283845;
     padding: 2rem;
     text-align: center;
     width: 100%;
-    color: #D9D9D9;
+    color: #f6f5f5;
 }
 
 /* Footer styling*/
 footer {
     display: flow-root;
     padding: 2rem;
-    background-color: #003366;
+    background-color: #283845;
     text-align: center;
+    color: #f6f5f5;
 }
 
 nav {
@@ -43,13 +42,13 @@ nav {
     bottom: 0;
     transition: all 0.3s ease-in-out;
     z-index: 1000;
-    background-color: #003366;
+    background-color: #283845;
     padding: 9px;
     height: 60px;
 }
 
-
 .logo {
+
     display: flex;
     align-items: center;
 }
@@ -61,7 +60,8 @@ nav {
 
 .logo h4 {
     margin-left: 10px;
-    color: #D9D9D9;
+    color: #f6f5f5;
+    /* اللون المميز */
 }
 
 .navli {
@@ -81,7 +81,6 @@ nav ul {
 
 .nav ul li {
     margin: 0 1rem;
-
 }
 
 .navli ul li a {
@@ -89,33 +88,27 @@ nav ul {
     padding: 0.2em 2em;
     font-family: sans-serif;
     text-decoration: none;
-    color: #D9D9D9;
-
-
+    color: #f6f5f5;
 }
 
-
 .navli ul li a.active {
-    background-color: #afb8cf;
-    color: #003366
+    background-color: #66a5ad;
+    color: #283845;
 }
 
 .navli ul li a:hover {
-    color: #D9D9D9;
-    background-color: #72784a;
+    color: #f6f5f5;
+    background-color: #66a5ad;
 }
-
-
-
 
 /*C.V button in nav ul style */
 .CV button {
-    background-color: #878080;
+    background-color: #66a5ad;
     position: absolute;
     right: 5px;
     align-self: center;
     top: 10px;
-    color: #D9D9D9;
+    color: #f6f5f5;
     border: none;
     padding: 10px 20px;
     height: 40px;
@@ -124,25 +117,23 @@ nav ul {
 }
 
 .CV button:hover {
-    background-color: #003366;
+    background-color: #283845;
     width: 10%;
 }
 
-/*for menu iucon*/
+/*for menu icon*/
 .menu-icon {
     display: none;
     flex-direction: column;
-
 }
 
 /*menu icon styling*/
 .menu-icon div {
     width: 30px;
     height: 3px;
-    background-color: #edddd4;
+    background-color: #f6f5f5;
     margin: 5px;
 }
-
 
 /* Main Section Styling */
 main {
@@ -152,7 +143,6 @@ main {
     width: 100%;
     display: contents;
     align-items: center;
-
 }
 
 /* General Section Styling */
@@ -161,11 +151,10 @@ section {
     max-width: 1200px;
     margin: 50px auto;
     padding: 50px;
-    background: linear-gradient(#003366, #003366),
+    background: linear-gradient(#283845, #283845),
         url('https://source.unsplash.com/random/1600x900') center/cover no-repeat;
     border-radius: 15px;
-
-    color: #D9D9D9;
+    color: #f6f5f5;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -173,9 +162,7 @@ section {
 /* Hover effect */
 section:hover {
     transform: scale(1.03);
-
 }
-
 
 .homepage img {
     width: 60%;
@@ -193,7 +180,7 @@ section:hover {
 h1,
 h2,
 h3 {
-    color: #D9D9D9;
+    color: #f6f5f5;
 }
 
 h1 {
@@ -212,7 +199,7 @@ h3 {
 
 p {
     font-size: 1rem;
-    color: #D9D9D9;
+    color: #f6f5f5;
 }
 
 /*About me styling*/
@@ -226,18 +213,13 @@ p {
 .homepage {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-
     gap: 1.5rem;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 20px;
     text-align: center;
-
 }
-
-
 
 /* Center Align All Items in Sections */
 .aboutMe,
@@ -246,7 +228,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .aboutMe ul {
@@ -270,16 +251,13 @@ p {
     gap: 1.5rem;
 }
 
-
-
 /* Project Items */
 .project-item {
-    border: 3px solid #2f37c0;
+    border: 3px solid #66a5ad;
     padding: 1.5rem;
     text-align: center;
     border-radius: 8px;
-
-    background-color: #838383;
+    background-color: #f6f5f5;
 }
 
 /*Project image*/
@@ -290,15 +268,15 @@ p {
 
 /*Project tags*/
 .project-tags {
-    color: #D9D9D9;
+    color: #f6f5f5;
     margin-top: 10px;
 }
 
 /*project tags span*/
 .project-tags span {
     display: inline-block;
-    background-color: #007D94;
-    color: #D9D9D9;
+    background-color: #283845;
+    color: #f6f5f5;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
@@ -306,7 +284,7 @@ p {
 }
 
 .project-item h3 {
-    color: #D9D9D9;
+    color: #f6f5f5;
 }
 
 /* Contact Section */
@@ -316,23 +294,22 @@ p {
     width: 350px;
     max-width: 500px;
     margin: 0 auto;
-    background-color: #838383;
+    background-color: #f6f5f5;
     padding: 2rem;
     border-radius: 8px;
-
 }
 
 .contact label {
     margin-top: 1rem;
     font-weight: bold;
-    color: #D9D9D9;
+    color: #283845;
 }
 
 .contact input,
 .contact textarea {
     padding: 0.7rem;
     margin-top: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid #66a5ad;
     border-radius: 4px;
     width: 100%;
 }
@@ -340,10 +317,8 @@ p {
 .contact button {
     margin-top: 1.5rem;
     padding: 0.8rem 1.2rem;
-    background-color: #878080;
-    /* Coral Red */
-    color: #D9D9D9;
-    /* Light Beige text */
+    background-color: #66a5ad;
+    color: #283845;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -352,10 +327,10 @@ p {
 }
 
 .contact button:hover {
-    background-color: #0056b3;
-    /* Dark Brownish-Red on hover */
+    background-color: #283845;
 }
 
+/*Contact info*/
 .contact-info {
     margin-top: 30px;
 }
@@ -374,8 +349,8 @@ p {
     align-items: center;
     bottom: 100px;
     right: 0;
-    background-color: #878080;
-    color: #D9D9D9;
+    background-color: #66a5ad;
+    color: #f6f5f5;
     border: none;
     padding: 12px 40px;
     border-radius: 5px;
@@ -384,11 +359,8 @@ p {
 }
 
 #scroll:hover {
-    background-color: #0056b3;
-    /* Darken on hover */
+    background-color: #283845;
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 800px) {
@@ -405,7 +377,6 @@ p {
 
     .img {
         max-width: 100%;
-
         margin-top: 2rem;
     }
 
@@ -429,11 +400,14 @@ p {
         right: 0;
         border-radius: 0;
         justify-content: center;
+        background-color: #66a5ad;
+        color: #f6f5f5;
     }
 
     .CV button:hover {
         padding: 0;
         width: 100%;
+        background-color: #283845;
     }
 
     /*nav list style*/
@@ -449,12 +423,11 @@ p {
         top: 60px;
         left: 50%;
         width: 50%;
-        background-color: #283d3b;
+        background-color: #283845;
         text-align: center;
         gap: 20px;
         padding-bottom: 50px;
     }
-
 
     /*Menu icon*/
     .menu-icon {
@@ -470,14 +443,12 @@ p {
         position: fixed;
         bottom: 119px;
         right: 0%;
-        background-color: #007BFF;
-        /* Default Blue */
-        color: #D9D9D9;
+        background-color: #66a5ad;
+        color: #f6f5f5;
         border: none;
         padding: 16px 16px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
     }
-
 }
